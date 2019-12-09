@@ -1,31 +1,34 @@
 {
-  "name": "js-library-boilerplate",
+  "name": "@codevor/js-is-type",
   "version": "0.1.0",
-  "description": "js-library-boilerplate-description",
-  "main": "dist/js-library-boilerplate.js",
-  "unpkg": "dist/js-library-boilerplate.min.js",
+  "description": "🎯Type-checking for 'Primitive' JS Types made easy!",
+  "main": "dist/js-is-type.js",
+  "unpkg": "dist/js-is-type.min.js",
   "scripts": {
     "clean": "rimraf dist",
     "dev": "NODE_ENV=dev webpack --progress --colors --watch",
     "build:umd": "NODE_ENV=production webpack",
     "lint": "eslint src tests",
-    "test": "jest --coverage --expand",
+    "test": "jest --coverage",
     "test:watch": "jest --watch",
     "coveralls": "cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
     "prepublish": "yarn lint && yarn test && yarn clean && yarn build:umd",
     "commit": "git-cz"
   },
-  "keywords": [],
-  "author": "Helder Burato Berto <helder.burato@gmail.com> (https://helder.dev/)",
+  "keywords": [
+    "Utils",
+    "Typechecking"
+  ],
+  "author": "Ilê Caian <ile.caian@gmail.com> (https://ile.pink/)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codevor/js-library-boilerplate.git"
+    "url": "git+https://github.com/codevor/js-is-type.git"
   },
   "bugs": {
-    "url": "https://github.com/codevor/js-library-boilerplate/issues"
+    "url": "https://github.com/codevor/js-is-type/issues"
   },
-  "homepage": "https://github.com/codevor/js-library-boilerplate#readme",
+  "homepage": "https://github.com/codevor/js-is-type#readme",
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",

@@ -1,6 +1,6 @@
 {
   "name": "@codevor/js-is-type",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "🎯Type-checking for 'Primitive' JS Types made easy!",
   "main": "dist/js-is-type.js",
   "unpkg": "dist/js-is-type.min.js",

@@ -1,18 +1,21 @@
 {
   "name": "@codevor/js-is-type",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "🎯Type-checking for 'Primitive' JS Types made easy!",
   "main": "dist/js-is-type.js",
   "unpkg": "dist/js-is-type.min.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "clean": "rimraf dist",
     "dev": "NODE_ENV=dev webpack --progress --colors --watch",
     "build:umd": "NODE_ENV=production webpack",
     "lint": "eslint src tests",
-    "test": "jest --coverage",
+    "test": "jest --coverage --expand",
     "test:watch": "jest --watch",
     "coveralls": "cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
-    "prepublish": "yarn lint && yarn test && yarn clean && yarn build:umd",
+    "prepublish": "yarn clean && yarn build:umd",
     "commit": "git-cz"
   },
   "keywords": [
@@ -45,7 +48,7 @@
     "husky": "^3.0.9",
     "jest": "^24.9.0",
     "rimraf": "^3.0.0",
-    "uglifyjs-webpack-plugin": "^2.2.0",
+    "terser-webpack-plugin": "^2.2.3",
     "webpack": "^4.41.1",
     "webpack-cli": "^3.3.9"
   },
